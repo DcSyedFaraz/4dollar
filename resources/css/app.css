@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .pagination{
+        @apply bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent;
+    }
+
+    .btn1{
+        @apply bg-[#37a6ff] text-white font-medium border-2 border-primary-two px-6 py-2 md:text-base rounded-tl-xl rounded-br-xl hover:shadow-xl uppercase;
+    }
+
+    .btn{
+        @apply text-center text-sm md:text-lg py-2 px-4 sm:px-8 font-semibold text-white rounded-full;
+    }
+
+    .heading-primary{
+        @apply text-xl lg:text-3xl font-semibold text-primary-one leading-[28px] xl:leading-[43.5px];
+    }
+
+    .text-primary{
+        @apply text-lg lg:text-[1rem];
+    }
+
+    .footer-link{
+        @apply  font-semibold text-base;
+    }
+
+    .form-select{
+        @apply  w-full text-black border border-primary-one rounded  focus:border-primary-two focus:ring-2 focus:ring-primary-two text-base outline-none py-2 px-3  leading-7;
+    }
+   .form-select1{
+        @apply  w-full text-black bg-transparent border border-primary-one rounded  focus:border-primary-two focus:ring-2 focus:ring-primary-two text-base outline-none py-3 px-3 leading-8;
+    }
+    .form-input{
+        @apply w-full text-black rounded border border-primary-one  focus:border-primary-two focus:ring-2 focus:ring-primary-two text-base outline-none py-1 px-3 leading-8;
+    }
+    .form-radiobtn{
+        @apply flex justify-center p-1 bg-white text-primary-one text-lg font-semibold border-2 border-primary-one rounded-full  cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:bg-primary-one peer-checked:text-white;
+    }
+    .btn-group {
+        @apply focus:shadow-lg;
+    }
+    .btn-group-item {
+        @apply inline-block px-6 py-2 mx-1 bg-white text-primary-one font-medium text-sm leading-snug  border-2 border-primary-one rounded-full  peer-checked:bg-primary-one peer-checked:text-white;
+    }
+    .btn-active{
+        @apply text-white bg-primary-one transition duration-100 ease-in-out;
+    }
+    .primary-para{
+        @apply text-gray-700 text-sm xl:text-base font-semibold space-y-2 ;
+    }
+
+}
