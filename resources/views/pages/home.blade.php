@@ -777,7 +777,7 @@
                             value="{{ old('paper_type', '') }}">
                             @foreach ($paper_types as $paper_type)
                                 <option {{ old('paper_type') == $paper_type->id ? 'selected' : '' }}
-                                    value="{{ $paper_type->id }}">{{ $paper_type->name }}</option>
+                                    value="{{ $paper_type->name }}">{{ $paper_type->name }}</option>
                             @endforeach
                         </select>
 

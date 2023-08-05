@@ -190,7 +190,7 @@
 
             <a href="{{route('contact')}}" class="block font-semibold text-base hover:text-primary-two py-2 px-1 lg:px-2 ">Contact</a>
 
-            <a href="{{route('login')}}" class="block font-semibold text-base hover:underline-offset-2 hover:underline py-2 px-1 lg:px-2 rounded-2xl bg-primary-one text-white">Log In</a>
+            <a href="{{route('login')}}" class="block font-semibold text-base hover:underline-offset-2 hover:underline py-2 px-1 lg:px-4 rounded-full bg-primary-one text-white">Log In</a>
 
             <div class="flex flex-col  md:flex-row  md:items-center  my-3 mx-1 lg:my-0 md:space-x-1 xl:space-x-4 space-y-2 md:space-y-0  ">
                 <a href="{{route('order')}}" class="text-center text-sm md:text-lg py-2 lg:px-4 xl:px-4 font-semibold text-white rounded-full btn lg:text-xs xl:py-3 xl:text-sm   bg-primary-one animate-bounce">

@@ -9,11 +9,11 @@
 <div class="bg-slate-300">
 
     <div class="container mx-auto lg:px-4 py-20 h-[32rem]">
-        <div class="flex flex-col space-y-4 my-2 md:my-0 lg:flex-row lg:mx-4">
+        <div class="flex flex-col space-y-4 my-2 md:my-0 lg:flex-row mx-4">
 
             <div class="panel w-full sm:w-[70%] lg:w-[35%] xl:w-[30%] mx-auto ">
                 <form id="registration-form" action="{{ route('register') }}" method="POST"
-                    class="border-4  bg-white border-[#6ec1e4] shadow-md rounded-lg px-4 pt-2 pb-6 flex flex-col md:ml-auto w-full space-y-2  ">
+                    class="border-4 bg-white border-[#6ec1e4] shadow-md rounded-lg px-4 pt-2 pb-6 flex flex-col md:ml-auto w-full space-y-2  ">
 
                     <div class="bg-primary-one py-2 px-5 rounded-t-lg text-white">
                         <p class="text-3xl text-center  font-semibold">
@@ -91,7 +91,7 @@
 
         // initialise plugin
         const phoneInput = window.intlTelInput(phone, {
-            preferredCountries: ["GB"],
+            preferredCountries: ["us"],
             separateDialCode : true,
             dropdownContainer : document.body,
             customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {

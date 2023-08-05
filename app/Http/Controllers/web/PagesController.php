@@ -48,9 +48,9 @@ class PagesController extends Controller
         $query =  Query::create($request->all());
         // return $query->deadlineName;
         // Send mail to user
-        //Mail::to($query->email)->send(new QueryMail($query));
+        Mail::to($query->email)->send(new QueryMail($query));
         // Send mail to admin
-        //Mail::to(config('app.mail_address'))->send(new QueryAdminMail($query));
+        // Mail::to(config('app.mail_address'))->send(new QueryAdminMail($query));
         return response()->json(['success' => "Thank you for showing your intrest, We've received your query successfully."]);
 
 
@@ -105,5 +105,9 @@ class PagesController extends Controller
     public function thankYou()
     {
         return view('pages.thank-you');
+    }
+    public function pricing()
+    {
+        return view('pages.pricing');
     }
 }

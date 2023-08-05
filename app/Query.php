@@ -6,17 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Query extends Model
 {
-    protected $fillable=[
-        'fname',
+    protected $fillable = [
+
         'email',
-        'subject',
-        'deadline',
-        'wcount',
         'phone',
-        'university',
+        'paper_type',
     ];
     public function deadlineName()
     {
-        return $this->belongsTo(Deadline::class,'deadline', 'id');
+        return $this->belongsTo(Deadline::class, 'deadline', 'id');
     }
 }
